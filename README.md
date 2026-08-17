@@ -81,5 +81,138 @@ No installation is required.
 
 You can also run it from Command Prompt:
 
-```bat
-kali-terminal.bat
+    kali-terminal.bat
+
+## 🔐 Administrator / Root Mode
+
+The script automatically checks whether it is running with administrator privileges.
+
+When running normally, the prompt uses:
+
+    $
+
+When running as administrator, it uses:
+
+    #
+
+The displayed username also changes to:
+
+    root
+
+when administrator privileges are detected.
+
+You can request administrator mode with:
+
+    sudo su
+
+or:
+
+    su
+
+> [!IMPORTANT]
+> Windows Administrator privileges are **not the same as Linux root privileges**. The `root` interface in this project is a simulation of the Linux-style experience.
+
+## 🎨 Terminal Appearance
+
+The terminal uses ANSI escape sequences for colored output and displays a Kali-inspired prompt.
+
+Example:
+
+    ╔══(username㉿Kali)
+    ╚══>$
+
+Administrator mode:
+
+    ╔══(root㉿Kali)
+    ╚══>#
+
+The `㉿` symbol is automatically enabled on supported newer Windows builds.
+
+## 📜 Command History
+
+Commands entered during the session are temporarily stored in:
+
+    %TEMP%\kali_history.txt
+
+Use:
+
+    history
+
+to display commands entered during the current session.
+
+## 🛠️ Requirements
+
+- Windows 10 or Windows 11
+- Command Prompt / Windows Batch support
+- ANSI/UTF-8 terminal support recommended
+
+No additional software is required.
+
+You do **not** need:
+
+- Python
+- Node.js
+- Linux
+- WSL
+- Kali Linux
+- Additional packages
+
+## ⚠️ Limitations
+
+This project is a **terminal simulator**, not a replacement for Kali Linux.
+
+Commands such as `ls`, `rm`, `cp`, `mv`, `ifconfig`, and `ps` are implemented using Windows functionality.
+
+For example:
+
+    ls
+
+uses Windows `dir` internally.
+
+Similarly:
+
+    ps
+
+uses Windows `tasklist`.
+
+Therefore, Linux commands that are not implemented by the script will return:
+
+    Bash: command: Command Not Found
+
+## 📁 Project Structure
+
+The project only requires the Batch file:
+
+    Kali-Terminal/
+    └── kali-terminal.bat
+
+No additional files are required.
+
+## 🎯 Project Goal
+
+The goal of this project is to create a **Kali/Linux-inspired terminal experience using only Windows Batch scripting**.
+
+The project is designed for:
+
+- Learning Windows Batch scripting
+- Experimenting with terminal interfaces
+- Creating a Linux-style terminal experience on Windows
+- Customizing Command Prompt
+- Learning how Windows commands can be wrapped with Linux-style aliases
+
+## 📜 License
+
+You are free to modify this project for personal use.
+
+If you redistribute a modified version, consider giving credit to the original creator.
+
+## ⭐ Credits
+
+**Created by Asdi Classes**
+
+Built with:
+
+- Windows Batch Script
+- Windows Command Prompt
+- Native Windows commands
+- ANSI escape sequences
