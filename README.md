@@ -200,15 +200,46 @@ The project is designed for:
 - Customizing Command Prompt
 - Learning how Windows commands can be wrapped with Linux-style aliases
 
+## ❤️ Project Note
+
+This project took a lot of **time, effort, testing, and experimentation** to build.
+
+It was created from scratch using Windows Batch scripting, with the goal of making a Kali/Linux-inspired terminal experience without requiring Linux, WSL, Python, or other external software.
+
+If you like the project and have ideas for improvements, **feel free to suggest them!** New ideas and constructive feedback are always welcome.
+
+## 💡 Future Ideas
+
+Some possible features that may be added in the future:
+
+- More Linux-style commands
+- Better command parsing
+- Command arguments and flags
+- Better `cd` support
+- More realistic Linux-style output
+- Custom terminal themes
+- Custom prompt configuration
+- Better command history
+- Tab completion
+- Command aliases
+- More system information commands
+- Improved administrator/root interface
+- More networking commands
+- Custom startup messages
+- Configuration/settings support
+- More terminal animations and effects
+
+> 💬 Have another idea? Feel free to suggest it!
+
 ## 📜 License
 
 You are free to modify this project for personal use.
 
-If you redistribute a modified version, consider giving credit to the original creator.
+If you redistribute a modified version, consider giving credit to the original creator .
 
 ## ⭐ Credits
 
-**Created by Asdi Classes**
+**Created by Asdi Classes (ME) **
 
 Built with:
 
